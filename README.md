@@ -33,13 +33,18 @@ Finalmente, la Partida pasará un Excel al Profesor con una tabla de las posicio
     classDiagram
       class Profesor{
       + void EmpiezaPartida;
+      + void ObtenerPregunta;
+      + void ObtenerRespuesta;
     }
       class Alumno{
-      + int IntroducirCodigo;  
+      + int IntroducirCodigo;
+      + int IntroducirNombre; 
+      + double ObtenerPuntuaje; 
     }
       class Partida{
       + int DarPuntos;
       + void DarPregunta;
       + void Respuestas;
+      + double darPuntuaje;
     }
 ```
