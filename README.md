@@ -16,4 +16,9 @@ Partiendo de esas 3 clases vamos a empezar la partida.
       class Alumno{
       + int IntroducirCodigo;  
     }
+      class Partida{
+      + int DarPuntos;
+      + void DarPregunta;
+      + void Respuestas;
+    }
 ```
