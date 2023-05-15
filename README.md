@@ -46,5 +46,9 @@ Finalmente, la Partida pasará un Excel al Profesor con una tabla de las posicio
     Partida ->> Alumno : Obtiene puntos por acertar
     Partida ->> Profesor: Tabla de Clasificacion
     end
+    Partida ->> Profesor : Primeras Posiciones
+    Profesor ->> Alumno : Primeras Posiciones
+    Partida ->> Alumno : Posicion Final
+    Partida ->> Profesor : Tabla Puntuaje | Posiciones
 
 ```
