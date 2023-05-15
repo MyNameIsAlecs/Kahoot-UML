@@ -37,6 +37,7 @@ Finalmente, la Partida pasará un Excel al Profesor con una tabla de las posicio
     Alumno ->> Profesor : Código Partida
     Alumno ->> Profesor : Nombre y Apellidos
     Profesor ->> Partida : Empieza la Partida
+    loop Cada Pregunta
     Partida ->> Profesor : Dar una Pregunta
     Partida ->> Profesor : Dar una/varias Respuestas
     Partida ->> Profesor : Temporizador
@@ -44,5 +45,6 @@ Finalmente, la Partida pasará un Excel al Profesor con una tabla de las posicio
     Alumno ->> Profesor : Responde la Pregunta
     Partida ->> Alumno : Obtiene puntos por acertar
     Partida ->> Profesor: Tabla de Clasificacion
+    end
 
 ```
