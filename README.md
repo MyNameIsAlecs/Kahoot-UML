@@ -11,6 +11,5 @@ Partiendo de esas 3 clases vamos a empezar la partida.
 ```mermaid
     classDiagram
         class Profesor {}
-        class Alumno {}
-        class Partida {}
+        
 ```
