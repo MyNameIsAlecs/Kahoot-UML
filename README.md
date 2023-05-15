@@ -48,3 +48,20 @@ Finalmente, la Partida pasará un Excel al Profesor con una tabla de las posicio
       + double darPuntuaje;
     }
 ```
+
+```mermaid
+    sequenceDiagram
+    Profesor ->> Partida : Empieza una Sala
+    Profesor ->> Alumno : Código Partida
+    Alumno ->> Profesor : Código Partida
+    Alumno ->> Profesor : Nombre y Apellidos
+    Profesor ->> Partida : Empieza la Partida
+    Partida ->> Profesor : Dar una Pregunta
+    Partida ->> Profesor : Dar una/varias Respuestas
+    Partida ->> Profesor : Temporizador
+    Profesor ->> Alumno : Muestra Preguntas y Respuestas
+    Alumno ->> Profesor : Responde la Pregunta
+    Partida ->> Alumno : Obtiene puntos por acertar
+    Partida ->> Profesor: Tabla de Clasificacion
+
+```
