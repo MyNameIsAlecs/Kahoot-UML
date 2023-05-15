@@ -30,28 +30,9 @@ Finalmente, la Partida pasará un Excel al Profesor con una tabla de las posicio
 
 
 ```mermaid
-    classDiagram
-      class Profesor{
-      + void EmpiezaPartida;
-      + void ObtenerPregunta;
-      + void ObtenerRespuesta;
-    }
-      class Alumno{
-      + int IntroducirCodigo;
-      + int IntroducirNombre; 
-      + double ObtenerPuntuaje; 
-    }
-      class Partida{
-      + int DarPuntos;
-      + void DarPregunta;
-      + void Respuestas;
-      + double darPuntuaje;
-    }
-```
-
-```mermaid
     sequenceDiagram
     Profesor ->> Partida : Empieza una Sala
+    Partida ->> Profesor : Proporciona un Código
     Profesor ->> Alumno : Código Partida
     Alumno ->> Profesor : Código Partida
     Alumno ->> Profesor : Nombre y Apellidos
