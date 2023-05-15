@@ -13,4 +13,7 @@ Partiendo de esas 3 clases vamos a empezar la partida.
       class Profesor{
       + void EmpiezaPartida;
     }
+      class Alumno{
+      + int IntroducirCodigo;  
+    }
 ```
