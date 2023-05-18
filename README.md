@@ -60,5 +60,5 @@ flowchart
     B -->|No| D[No deja, creo una cuenta]
     D --> E{Creo una cuenta}
     E --> A
-    D --> E
+   
 ```
