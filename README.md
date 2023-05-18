@@ -58,5 +58,6 @@ flowchart
     A[Entro en la pagina] --> B{Inicio Sesion}
     B -->|Sí| C[Entro en mi cuenta]
     B -->|No| D[No deja, creo una cuenta]
+    D --> E{Creo una cuenta}
     D --> A
 ```
