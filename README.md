@@ -53,6 +53,9 @@ Finalmente, la Partida pasará un Excel al Profesor con una tabla de las posicio
 ```
 
 UML de Actividades
+
+Prueba de Inicio de Sesión en una página web.
+
 ```mermaid
 flowchart
     A[Entro en la pagina] --> B{Inicio Sesion}
