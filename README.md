@@ -59,6 +59,6 @@ flowchart
     B -->|Sí| C[Entro en mi cuenta]
     B -->|No| D[No deja, creo una cuenta]
     D --> E{Creo una cuenta}
-    E --> B
-    D --> A
+    E --> A
+    D --> E
 ```
