@@ -52,16 +52,42 @@ Finalmente, la Partida pasará un Excel al Profesor con una tabla de las posicio
     Partida ->> Profesor : Tabla Puntuaje | Posiciones
 ```
 
-UML de Actividades
+# UML de Actividades
 
 Prueba de Inicio de Sesión en una página web.
 
 ```mermaid
 flowchart
-    A[Entro en la pagina] --> B{Inicio Sesion}
-    B -->|Sí| C[Entro en mi cuenta]
-    B -->|No| D[No deja, creo una cuenta]
-    D --> E{Creo una cuenta}
-    E --> A
+    A[Entro en la pagina] --> B{Opcion?}
+    B -->|Acceso| C[Entrar en la cuenta]
+    B -->|Registro| D[Crear una cuenta]
+    D --> B
+    C --> E[Accedo a mi información]
+    
    
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
