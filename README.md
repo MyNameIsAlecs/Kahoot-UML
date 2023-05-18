@@ -53,7 +53,7 @@ Finalmente, la Partida pasará un Excel al Profesor con una tabla de las posicio
 ```
 
 UML de Actividades
-```
+```mermaid
 flowchart
     A[Entro en la pagina] --> B{Inicio Sesion}
     B -->|Sí| C[Entro en mi cuenta]
