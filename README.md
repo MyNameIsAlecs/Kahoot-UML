@@ -50,5 +50,13 @@ Finalmente, la Partida pasará un Excel al Profesor con una tabla de las posicio
     Profesor ->> Alumno : Primeras Posiciones
     Partida ->> Alumno : Posicion Final
     Partida ->> Profesor : Tabla Puntuaje | Posiciones
+```
 
+UML de Actividades
+```
+flowchart
+    A[Entro en la pagina] --> B{Inicio Sesion}
+    B -->|Sí| C[Entro en mi cuenta]
+    B -->|No| D[No deja, creo una cuenta]
+    D --> A
 ```
