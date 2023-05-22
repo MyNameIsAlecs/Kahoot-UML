@@ -67,6 +67,9 @@ flowchart
 
 # UML de Estados
 
+Estado de un personaje como puede ser del VideoJuego COD -- Black Ops II.
+
+
 ```mermaid
 stateDiagram-v2
     state "Tumbado" as tumbado
