@@ -63,8 +63,26 @@ flowchart
     B -->|Registro| D[Crear una cuenta]
     D --> B
     C --> E[Accedo a mi información]
+```
+
+# UML de Estados
+
+```mermaid
+stateDiagram-v2
+    state "Tumbado" as tumbado
+    state "Normal" as normal
+    state "Saltar" as saltar
+    state "Lanzar" as lanzar
+    state "Volver Normal" as volver
+    [*] --> normal
+    normal --> tumbado : tumbarse
+    normal --> saltar : saltar
+    saltar --> lanzar : lanzarse
+    tumbado --> lanzar : lanzarse
+    lanzar --> volver : levantarse
+    volver --> [*]
     
-   
+
 ```
 
 
